@@ -1,7 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
 import styles from './Header.module.css';
-import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faMoon, faSun, faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
