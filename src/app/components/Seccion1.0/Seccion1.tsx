@@ -11,10 +11,10 @@ export default function Seccion() {
         <p className={Style.Parrafo}>
           Bienvenido a mi portafolio personal. Aquí encontrarás información sobre mis 
           proyectos, habilidades y cómo contactarme.
+          Desarrollador web con experiencia en React y Next.js
+          Apasionado por el diseño y la tecnología
+          Siempre aprendiendo y mejorando.
         </p>
-        <p className={Style.Parrafo}>Desarrollador web con experiencia en React y Next.js</p>
-        <p className={Style.Parrafo}>Apasionado por el diseño y la tecnología</p>
-        <p className={Style.Parrafo}>Siempre aprendiendo y mejorando</p>
         <div className={Style.ContainerIcons}>
           <a href="https://github.com/" target="_blank" className={Style.navLink} rel="noreferrer">
           <FontAwesomeIcon icon={faGithub} /> GitHub
@@ -23,7 +23,13 @@ export default function Seccion() {
         </div>
       </div>
         <div className={Style.HomeImg}>
-          <Image className={Style.ImgeFont} src="/image/FotoF.png" alt="Logo FX" width={60} height={50}/> 
+          <Image
+            className={Style.ImgeFont}
+            src="/image/PC.JPG"
+            alt="Logo FX"
+            width={320}
+            height={320}
+          />
         </div>
     </section>
   );
