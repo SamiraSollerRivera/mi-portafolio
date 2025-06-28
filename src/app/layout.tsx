@@ -7,6 +7,8 @@ import Header from "./components/Header/Header";
 import Seccion from "./components/Seccion1.0/Seccion1";
 // ESTA ES LA SECCION DE PROYECTOS DE MI PORTAFOLIO
 import Proyectos from "./components/Seccion2.0/Proyectos";
+// ESTA ES MI HABILIDADES (SKILLS) DE MI PORTAFOLIO
+import Habilidades from "./components/Seccion4.0/Habilidades";
 // ESTA ES LA SECCION DE CONTACTO DE MI PORTAFOLIO
 import Contacto from "./components/Seccion3.0/Contacto";
 const geistSans = Geist({
@@ -40,6 +42,8 @@ export default function RootLayout({
         <Seccion />
         {/* ESTA ES LA SECCION DE PROYECTOS DE MI PORTAFOLIO */}
         <Proyectos />
+        {/* ESTA ES MI HABILIDADES (SKILLS) DE MI PORTAFOLIO */}
+        <Habilidades />
         {/* ESTA ES LA SECCION DE CONTACTO DE MI PORTAFOLIO */}
         <Contacto />
         {/* Aquí se renderizarán los hijos de este layout */}

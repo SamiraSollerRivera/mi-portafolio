@@ -1,0 +1,67 @@
+:global(body.dark) .proyectosContainer {
+  background-color: #000000;
+  color: #f5f5f5;
+}
+
+:global(body.dark) .titulo {
+  color: #ffffff;
+}
+
+:global(body.dark) .card {
+  background-color: #1e1e1e;
+  border-color: #333;
+  color: #ffffff;
+}
+
+:global(body.dark) .card:hover {
+  background-color: #00ffeacc;
+}
+
+:global(body.dark) .card a {
+  color: #00ffff;
+}
+.proyectosContainer {
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.card p {
+  margin: 0.5rem 0 1rem;
+  color: #666;
+}
+
+.card a {
+  color: #0070f3;
+  text-decoration: none;
+  font-weight: bold;
+}

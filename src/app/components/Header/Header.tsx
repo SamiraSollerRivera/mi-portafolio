@@ -35,6 +35,7 @@ export default function Header() {
       <div className={`${styles.navLinks} ${isOpen ? styles.open : ''}`}>
         <a href="#inicio" className={styles.navLink} onClick={() => setIsOpen(false)}>Inicio</a>
         <a href="#proyectos" className={styles.navLink} onClick={() => setIsOpen(false)}>Proyectos</a>
+        <a href="#habilidades" className={styles.navLink} onClick={() => setIsOpen(false)}>Habilidades</a>
         <a href="#contacto" className={styles.navLink} onClick={() => setIsOpen(false)}>Contacto</a>
         <a href="https://github.com/" target="_blank" className={styles.navLink} rel="noreferrer">
           <FontAwesomeIcon icon={faGithub} /> GitHub
