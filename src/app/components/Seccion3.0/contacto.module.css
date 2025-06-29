@@ -18,7 +18,7 @@
 }
 
 :global(body.dark) .formulario:hover {
-  background-color: #00ffeacc;
+  background-color: #00ffea;
   color: #000000;
 }
 
@@ -93,14 +93,14 @@
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   transition: transform 0.2s ease, background-color 0.3s ease;
   align-self: center;
 }
 .botonenviar:hover {
   transform: scale(1.05);
-  color: #0077b5;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #000000;
 }
 /*====== ESTILOS DE LAS REDES SOCIALES ======*/
 .redes {
@@ -115,19 +115,20 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 0.8rem 1.2rem;
-  border-radius: 10px;
+  border-radius: 8px;
   text-decoration: none;
-  color: #222;
+  color: #000000;
   font-weight: 600;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   transition: transform 0.2s ease;
 }
 
 .icono:hover {
-  transform: scale(1.05);
-  color: #0077b5;
+  transform: translateY(-5px);
+  color: #ffffff;
+  background-color: #000000;
 }
 
 @media (max-width: 600px) {

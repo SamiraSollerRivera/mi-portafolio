@@ -45,7 +45,7 @@ export default function Contacto() {
           <input className={`${styles.ingresardato}`}
             type="text"
             name="nombre"
-            placeholder="Ingresa tu nombre"
+            placeholder="..."
             value={form.nombre}
             onChange={handleChange}
             required
@@ -56,7 +56,7 @@ export default function Contacto() {
           <input className={`${styles.ingresardato}`}
             type="email"
             name="correo"
-            placeholder="Ingresa tu correo electrónico"
+            placeholder="...@"
             value={form.correo}
             onChange={handleChange}
             required
@@ -67,7 +67,7 @@ export default function Contacto() {
           <label className={styles.labeltext} htmlFor="mensaje">Mensaje</label>
           <textarea className={`${styles.ingresardato} ${styles.mensaje}`}
             name="mensaje"
-            placeholder="Escribe tu mensaje"
+            placeholder="..."
             value={form.mensaje}
             onChange={handleChange}
             required

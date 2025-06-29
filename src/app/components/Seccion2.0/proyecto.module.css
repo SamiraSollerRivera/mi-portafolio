@@ -18,7 +18,8 @@
 }
 
 :global(body.dark) .card:hover {
-  background-color: #00ffeacc;
+  color: #000000;
+  background-color: #00ffea;
 }
 
 :global(body.dark) .card a {
