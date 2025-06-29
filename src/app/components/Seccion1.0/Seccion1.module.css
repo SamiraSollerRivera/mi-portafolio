@@ -22,8 +22,8 @@
 }
 
 :global(body.dark) .navLink {
-  background-color: #1500ff;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 :global(body.dark) .navLink:hover {

@@ -51,7 +51,7 @@ export default function Proyectos() {
       <div className={styles.grid}>
         {proyectos.map((proyecto, index) => (
           <div key={index} className={styles.card}>
-            <h3>{proyecto.titulo}</h3>
+            <h3 className={styles.titulosecundario}>{proyecto.titulo}</h3>
             <p>{proyecto.descripcion}</p>
             <a href={proyecto.link} target="_blank" rel="noreferrer">Ver Proyecto</a>
           </div>

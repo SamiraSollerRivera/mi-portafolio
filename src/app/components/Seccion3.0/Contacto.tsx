@@ -77,13 +77,13 @@ export default function Contacto() {
         {enviado && <p className={styles.confirmacion}>¡Mensaje enviado correctamente!</p>}
       </form>
       <div className={styles.redes}>
-        <a href="https://wa.me/51999999999" target="_blank" rel="noreferrer" className={styles.icono}>
+        <a href="https://wa.link/33paui" target="_blank" rel="noreferrer" className={styles.icono}>
           <FontAwesomeIcon icon={faWhatsapp} /> WhatsApp
         </a>
-        <a href="https://facebook.com/tuusuario" target="_blank" rel="noreferrer" className={styles.icono}>
+        <a href="https://www.facebook.com/share/16L88ea5AU/" target="_blank" rel="noreferrer" className={styles.icono}>
           <FontAwesomeIcon icon={faFacebook} /> Facebook
         </a>
-        <a href="https://instagram.com/tuusuario" target="_blank" rel="noreferrer" className={styles.icono}>
+        <a href="https://www.instagram.com/666el_primo?igsh=ejIyMWQ2c3I5M3lz&utm_source=ig_contact_invite" target="_blank" rel="noreferrer" className={styles.icono}>
           <FontAwesomeIcon icon={faInstagram} /> Instagram
         </a>
         <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noreferrer" className={styles.icono}>
