@@ -1,31 +1,30 @@
 :global(body.dark) .contactoContainer {
   background-color: #000000;
-  color: #f5f5f5;
 }
 
 :global(body.dark) .titulo {
   color: #ffffff;
 }
-
-:global(body.dark) .labeltext {
+:global(body.dark) .labeltext{
   color: #ffffff;
 }
-
 :global(body.dark) .formulario {
   background-color: #1e1e1e;
   border-color: #333;
-  color: #ffffff;
 }
 
 :global(body.dark) .formulario:hover {
   background-color: #00ffea;
-  color: #000000;
 }
 
-:global(body.dark) .formulario a {
+:global(body.dark) .icono{
+  background: #f5f5f5;
   color: #000000;
 }
-
+:global(body.dark) .icono:hover {
+  color: #000000;
+  background: #00ffea;
+}
 .contactoContainer {
   padding: 2rem;
   background-color: #ffffff;
@@ -98,7 +97,7 @@
   align-self: center;
 }
 .botonenviar:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px);
   color: #ffffff;
   background-color: #000000;
 }
@@ -120,7 +119,6 @@
   border-radius: 8px;
   text-decoration: none;
   color: #000000;
-  font-weight: 600;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   transition: transform 0.2s ease;
 }

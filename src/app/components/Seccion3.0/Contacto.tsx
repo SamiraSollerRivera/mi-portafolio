@@ -1,4 +1,5 @@
 'use client'; // Necesario por el uso de useState
+//Correo
 
 import styles from './contacto.module.css';
 import { useState } from 'react';
@@ -22,18 +23,36 @@ export default function Contacto() {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Mensaje enviado:', form);
-    setEnviado(true);
 
-    setForm({
-      nombre: '',
-      correo: '',
-      mensaje: '',
+    // Crear el FormData para enviar a Formspree
+    const formData = new FormData();
+    formData.append('Nombre', form.nombre);
+    formData.append('Correo', form.correo);
+    formData.append('Mensaje', form.mensaje);
+
+    // Reemplaza con tu endpoint real de Formspree
+    const response = await fetch('https://formspree.io/f/mrbkjzop', {
+      method: 'POST',
+      body: formData,
+      headers: {
+        Accept: 'application/json',
+      },
     });
 
-    setTimeout(() => setEnviado(false), 3000);
+    if (response.ok) {
+      setEnviado(true);
+      setForm({
+        nombre: '',
+        correo: '',
+        mensaje: '',
+      });
+
+      setTimeout(() => setEnviado(false), 3000);
+    } else {
+      alert('Hubo un error al enviar el formulario.');
+    }
   };
 
   return (
@@ -42,7 +61,8 @@ export default function Contacto() {
       <form onSubmit={handleSubmit} className={styles.formulario}>
         <div className={styles.contenido}>
           <label className={styles.labeltext} htmlFor="nombre">Nombre</label>
-          <input className={`${styles.ingresardato}`}
+          <input
+            className={styles.ingresardato}
             type="text"
             name="nombre"
             placeholder="..."
@@ -53,7 +73,8 @@ export default function Contacto() {
         </div>
         <div className={styles.contenido}>
           <label className={styles.labeltext} htmlFor="correo">Correo electrónico</label>
-          <input className={`${styles.ingresardato}`}
+          <input
+            className={styles.ingresardato}
             type="email"
             name="correo"
             placeholder="...@"
@@ -62,10 +83,10 @@ export default function Contacto() {
             required
           />
         </div>
-        
         <div className={styles.contenido}>
           <label className={styles.labeltext} htmlFor="mensaje">Mensaje</label>
-          <textarea className={`${styles.ingresardato} ${styles.mensaje}`}
+          <textarea
+            className={`${styles.ingresardato} ${styles.mensaje}`}
             name="mensaje"
             placeholder="..."
             value={form.mensaje}
@@ -76,6 +97,7 @@ export default function Contacto() {
         <button type="submit" className={styles.botonenviar}>Enviar mensaje</button>
         {enviado && <p className={styles.confirmacion}>¡Mensaje enviado correctamente!</p>}
       </form>
+
       <div className={styles.redes}>
         <a href="https://wa.link/33paui" target="_blank" rel="noreferrer" className={styles.icono}>
           <FontAwesomeIcon icon={faWhatsapp} /> WhatsApp
@@ -91,7 +113,7 @@ export default function Contacto() {
         </a>
         <a href="/cv-anselmo.pdf" download className={styles.icono}>
           <FontAwesomeIcon icon={faFilePdf} /> Descargar CV
-      </a>
+        </a>
       </div>
     </section>
   );
