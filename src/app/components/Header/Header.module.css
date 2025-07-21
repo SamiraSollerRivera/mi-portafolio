@@ -97,12 +97,11 @@
   color: #0070f3;
 }
 :global(body.dark) .dropdownContent a {
-  color: #cacaca;
+  color: #ffffff;
 }
 :global(body.dark) .dropdownContent a:hover {
   color: #0070f3;
 }
-
 
 /** Toggle Button **/
 
