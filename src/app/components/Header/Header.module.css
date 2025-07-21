@@ -11,7 +11,7 @@
   z-index: 100;
 }
 .navbarLight {
-  background: rgba(255, 255, 255, 0.866);
+  background: rgba(121, 84, 84, 0.866);
   backdrop-filter: blur(9px);
   color: rgb(0, 0, 0);
 }
