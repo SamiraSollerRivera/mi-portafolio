@@ -38,7 +38,7 @@
 .logo {
   font-size: 1.2rem;
   font-weight: bold;
-  color: blue;
+  color: inherit;
 }
 
 .navLinks {
@@ -56,6 +56,8 @@
   transition: background 0.3s, color 0.3s;
 }
 .botonnav {
+  background: transparent;
+  border: none;
   color: inherit;
   text-decoration: none;
   font-weight: 500;
@@ -67,6 +69,42 @@
   transform: translateY(-5px);
   color: #0070f3;
 }
+/**MENU DESPEGABLE**/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+
+.dropdownContent a:hover{
+  color: #0070f3;
+}
+.dropdownContent a {
+  color: #000000;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+  color: #0070f3;
+}
+:global(body.dark) .dropdownContent a {
+  color: #cacaca;
+}
+:global(body.dark) .dropdownContent a:hover {
+  color: #0070f3;
+}
+
+
+/** Toggle Button **/
 
 .toggleButton {
   background: none;
@@ -95,7 +133,6 @@
   align-items: center;
 }
 
-/* Responsive mobile */
 @media (max-width: 700px) {
   .menuToggle {
     display: block;
@@ -116,6 +153,20 @@
   }
 
   .open {
+    display: flex;
+  }
+}
+@media (max-width: 700px) {
+  .dropdownContent {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    padding-left: 1rem;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .dropdown:hover .dropdownContent {
     display: flex;
   }
 }

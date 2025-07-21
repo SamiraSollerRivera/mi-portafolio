@@ -16,7 +16,7 @@ export default function Seccion() {
           Siempre aprendiendo y mejorando.
         </p>
         <div className={Style.ContainerIcons}>
-          <a href="https://github.com/" target="_blank" className={Style.navLink} rel="noreferrer">
+          <a href="https://github.com/AnselmoTrade" target="_blank" className={Style.navLink} rel="noreferrer">
           <FontAwesomeIcon icon={faGithub} /> GitHub
           </a>
           <a href="#contacto" className={Style.navLink}>Contactame</a>

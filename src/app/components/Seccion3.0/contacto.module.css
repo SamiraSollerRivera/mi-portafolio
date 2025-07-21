@@ -34,7 +34,7 @@
 .titulo {
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  color: #333;
+  color: #000000;
 }
 /*====== ESTILOS DEL FORMULARIO ======*/
 .formulario{
@@ -138,5 +138,8 @@
   .icono {
     width: 80%;
     justify-content: center;
+  }
+  .ingresardato {
+    width: 100%;
   }
 }

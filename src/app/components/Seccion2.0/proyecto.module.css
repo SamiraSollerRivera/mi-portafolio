@@ -45,7 +45,7 @@
 .card {
   background-color: white;
   border: 1px solid #ddd;
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 1.5rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
@@ -69,4 +69,30 @@
   color: #0070f3;
   text-decoration: none;
   font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .titulo {
+    padding: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .card h3 {
+    font-size: 1.25rem;
+  }
+
+  .card p {
+    font-size: 0.875rem;
+  }
+
+  .card a {
+    font-size: 0.875rem;
+  }
 }

@@ -1,0 +1,185 @@
+:global(body.dark) .mysqlContainer {
+  background-color: #000000c2;
+}
+:global(body.dark) .card {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border: 1px solid #333;
+}
+:global(body.dark) .card:hover {
+  background-color: #00ffea;
+}
+:global(body.dark) .titulo {
+  color: #ffffff;
+}
+:global(body.dark) .cerrar {
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #ddd;
+}
+:global(body.dark) .cerrar:hover {
+  background: #00ffea;
+  color: #ffffff;
+  border: 1px solid #00ffea;
+}
+:global(body.dark) .colorblue {
+  color: #000000;
+}
+.mysqlContainer {
+  padding: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: rgba(255, 255, 255, 0.636);
+  padding: 2rem;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.cerrar {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-size: 1.5rem;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+  z-index: 1100;
+}
+
+.cerrar:hover {
+  transform: translateY(-5px);
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+
+.header {
+  color: white;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 1rem;
+}
+
+.titulo {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  flex-grow: 1;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.card {
+  margin-bottom: 1rem;
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  width: 350px;
+
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.descripcion {
+  margin: 0.5rem 0 1rem;
+  text-align: left;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.colorblue {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #0070f3;
+}
+.pdfViewer {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+.icono {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  background-color: #ffffff;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #000000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+.icono:hover {
+  transform: translateY(-5px);
+  color: #ffffff;
+  background-color: #000000;
+}
+
+@media (max-width: 768px) {
+  .mysqlContainer {
+    padding: 1rem;
+  }
+
+  .titulo {
+    font-size: 1.6rem;
+  }
+
+  .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .cerrar {
+    font-size: 1.3rem;
+    padding: 0.3rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo {
+    font-size: 1.4rem;
+  }
+
+  .titulosecundario {
+    font-size: 1.1rem;
+  }
+
+  .card {
+    padding: 0.8rem;
+  }
+
+  .cerrar {
+    font-size: 1.2rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+}
