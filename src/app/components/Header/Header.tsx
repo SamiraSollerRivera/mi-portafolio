@@ -10,7 +10,6 @@ interface HeaderProps {
 
 export default function Header({ onMySQLClick }: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
-  const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
